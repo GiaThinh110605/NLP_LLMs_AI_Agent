@@ -1,17 +1,18 @@
-- machine learning slide: https://canva.link/6xdb3n1gpijx1kw
-- deep learning slide: https://canva.link/6xdb3n1gpijx1kw
-- fastapi slide: https://canva.link/840ya322qx6ytve
-- nlp slide: https://canva.link/i0xl1006o17uc2g
-- thực hành machine learning sử dụng scikit learn: https://www.youtube.com/live/fm8nn374caw?si=Rz_JetT6dEmlPhM-
+# Lộ trình & Tài liệu học NLP, LLMs & AI Agent
 
-> Khi học chỉ tra google không nên sử dụng AI
+> **Lưu ý:** Trong quá trình học, ưu tiên tra cứu tài liệu chính thức (documentation), Google và tự triển khai mã nguồn; hạn chế lạm dụng AI để giải hộ bài tập nhằm nắm vững bản chất kỹ thuật.
+
+### Slide bài giảng & Khởi động
+- **Machine Learning & Deep Learning Slide:** https://canva.link/6xdb3n1gpijx1kw
+- **FastAPI Slide:** https://canva.link/840ya322qx6ytve
+- **NLP Slide:** https://canva.link/i0xl1006o17uc2g
+- **Thực hành Machine Learning với Scikit-learn:** https://www.youtube.com/live/fm8nn374caw?si=Rz_JetT6dEmlPhM-
 
 ---
 
 ## Module 1: NLP Fundamentals
 
-### Nội dung học
-
+### 1. Nội dung học
 - Tổng quan về NLP, các bài toán phổ biến và vai trò của NLP trong AI hiện đại.
 - Lịch sử phát triển của NLP: từ các phương pháp truyền thống đến Machine Learning, Deep Learning và LLM.
 - Các kỹ thuật xử lý văn bản cơ bản: tokenization, normalization, stopwords, stemming và lemmatization.
@@ -22,62 +23,63 @@
 - Các chỉ số đánh giá cơ bản: accuracy, precision, recall và F1-score.
 - Thực hành xử lý và phân tích một bộ dữ liệu văn bản; xây dựng mô hình phân loại văn bản đơn giản bằng TF-IDF và Logistic Regression.
 
-### Tài liệu học
+### 2. Tài liệu học
+- **Video bài giảng:** https://www.youtube.com/live/4O0HPXiDpTs?si=GOmMVvysstUO2zl1
+- **NLTK Book:** https://www.nltk.org/book_1ed/
+- **NLTK Documentation:** https://www.nltk.org/
+- **Scikit-learn — Text Feature Extraction:** https://scikit-learn.org/stable/modules/feature_extraction.html
+- **Scikit-learn — Text Classification:** https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
 
-- Video tổng quan: https://www.youtube.com/live/4O0HPXiDpTs?si=GOmMVvysstUO2zl1
-- NLTK Book: https://www.nltk.org/book_1ed/
-- NLTK Documentation: https://www.nltk.org/
-- Scikit-learn — Text Feature Extraction: https://scikit-learn.org/stable/modules/feature_extraction.html
-- Scikit-learn — Text Classification: https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
-
-### Bài tập thực hành
-
-1. Làm sạch và chuẩn hóa dữ liệu văn bản, xử lý dữ liệu rỗng và trùng lặp.
-2. Thực hành tokenization, loại bỏ stopwords, stemming và lemmatization.
-3. Biểu diễn văn bản bằng Bag of Words và TF-IDF; so sánh kết quả.
-4. Xây dựng mô hình phân loại cảm xúc hoặc phân loại văn bản bằng Logistic Regression.
-5. Chia dữ liệu thành train/validation/test, tránh data leakage và đánh giá bằng accuracy, precision, recall, F1-score.
-6. Phân tích các mẫu dự đoán sai và viết báo cáo ngắn về pipeline, kết quả và hạn chế của mô hình.
+### 3. Bài tập thực hành
+1. **Làm sạch và chuẩn hóa dữ liệu:** Xử lý dữ liệu rỗng, trùng lặp và chuẩn hóa ký tự văn bản.
+2. **Tiền xử lý text:** Thực hành tokenization, loại bỏ stopwords, stemming và lemmatization.
+3. **Biểu diễn đặc trưng:** Xây dựng ma trận Bag of Words và TF-IDF; so sánh kết quả biểu diễn.
+4. **Mô hình hóa:** Xây dựng mô hình phân loại cảm xúc (sentiment) hoặc phân loại chủ đề bằng Logistic Regression.
+5. **Đánh giá & Tránh Leakage:** Chia tập train/validation/test đúng chuẩn, đánh giá mô hình bằng accuracy, precision, recall, F1-score.
+6. **Error Analysis:** Phân tích các mẫu dự đoán sai và viết báo cáo ngắn về pipeline, kết quả và hạn chế.
 
 ---
 
 ## Module 2: Deep Learning in NLP
 
-- Neural Network trong NLP và cách deep learning cải thiện khả năng xử lý ngôn ngữ.
-- Tìm hiểu các kiến trúc RNN, LSTM, GRU: nguyên lý hoạt động, ưu và nhược điểm.
-- Ứng dụng các mô hình tuần tự vào bài toán xử lý văn bản.
-- Thực hành xây dựng và huấn luyện mô hình NLP cơ bản bằng PyTorch.
+### 1. Nội dung học
+- Neural Network trong NLP và cách deep learning cải thiện khả năng biểu diễn ngôn ngữ.
+- Kiến trúc tuần tự: nguyên lý hoạt động, ưu và nhược điểm của RNN, LSTM và GRU.
+- Xử lý vấn đề vanishing/exploding gradient trong mạng tuần tự.
+- Ứng dụng mô hình tuần tự vào bài toán phân loại văn bản (sequence classification).
+- Thực hành xây dựng, huấn luyện và đánh giá mô hình NLP cơ bản bằng PyTorch.
 
-### youtube:
-- https://www.youtube.com/live/pusntJk4tsw?si=eV0oiDSbunvAJ0Ct
-- https://www.youtube.com/live/_J1tXiC1DLY?si=8SV6nDGYFBi97qJC
-- https://www.youtube.com/playlist?list=PLqL-7eLmqd9V3faivSAST76YQClS44dSz
+### 2. Video & Tài liệu học
+- **Video bài giảng:**
+  - Sequence Models & RNN: https://www.youtube.com/live/pusntJk4tsw?si=eV0oiDSbunvAJ0Ct
+  - LSTM & GRU Architecture: https://www.youtube.com/live/_J1tXiC1DLY?si=8SV6nDGYFBi97qJC
+  - Playlist NLP Deep Learning: https://www.youtube.com/playlist?list=PLqL-7eLmqd9V3faivSAST76YQClS44dSz
+- **Tài liệu tham khảo:**
+  - PyTorch Sequence Models Tutorial: https://docs.pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html
+  - PyTorch nn.RNN: https://docs.pytorch.org/docs/2.14/generated/torch.nn.RNN.html
+  - PyTorch nn.LSTM: https://docs.pytorch.org/docs/2.14/generated/torch.nn.LSTM.html
+  - PyTorch nn.GRU: https://docs.pytorch.org/docs/2.14/generated/torch.nn.GRU.html
+  - Dataset Stanford IMDB: https://huggingface.co/datasets/stanfordnlp/imdb
 
-### tài liệu:
-- https://docs.pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html
-- https://docs.pytorch.org/docs/2.14/generated/torch.nn.LSTM.html
-- https://docs.pytorch.org/docs/2.14/generated/torch.nn.GRU.html
-- https://docs.pytorch.org/docs/2.14/generated/torch.nn.RNN.html
-- https://huggingface.co/datasets/stanfordnlp/imdb
+### 3. Bài tập thực hành
 
-### Bài tập:
+#### Bài 1 — Neural Network cơ bản (Embedding + Feed Forward)
+- Chuyển văn bản thành token ID; xây dựng vocabulary và padding chuỗi về cùng độ dài.
+- Xây dựng mô hình với kiến trúc: Embedding → Global Pooling (Average/Max) → Linear.
+- Huấn luyện mô hình phân loại cảm xúc trên IMDB dataset.
+- Theo dõi loss curve và đánh giá Accuracy, F1-score trên tập test.
 
-#### Bài 1 — Neural Network cơ bản
-- Chuyển văn bản thành token ID.
-- Tạo vocabulary và padding chuỗi.
-- Xây dựng mô hình embedding + pooling + Linear.
-- Huấn luyện và đánh giá Accuracy, F1-score.
+#### Bài 2 — Phân loại văn bản với LSTM
+- Thay lớp pooling bằng lớp `nn.LSTM`.
+- Trích xuất hidden state của bước thời gian cuối (hoặc qua pooling các hidden states) để đưa vào classifier.
+- Theo dõi loss/accuracy qua từng epoch, kiểm tra hiện tượng overfitting.
+- Thử nghiệm dự đoán trên các câu đánh giá thực tế mới nhập vào.
 
-#### Bài 2 — LSTM
-- Thay mô hình cơ bản bằng nn.LSTM.
-- Sử dụng hidden state để phân loại cảm xúc.
-- Theo dõi loss và kết quả trên tập test.
-- Thử dự đoán các câu đánh giá mới.
-
-#### Bài 3 — So sánh RNN, LSTM và GRU
-- Giữ nguyên cách chia dữ liệu, vocabulary và các điều kiện huấn luyện.
-- So sánh Accuracy, F1-score, thời gian huấn luyện.
-- Giải thích ưu nhược điểm và các trường hợp mô hình dự đoán sai.
+#### Bài 3 — So sánh thực nghiệm RNN, LSTM và GRU
+- Giữ nguyên cấu hình phân chia dữ liệu, vocabulary và hyperparameter huấn luyện.
+- Huấn luyện độc lập 3 mô hình: Simple RNN, LSTM, GRU.
+- Lập bảng so sánh: Accuracy, Macro F1-score, thời gian huấn luyện mỗi epoch, tốc độ suy luận (inference latency).
+- Phân tích nguyên nhân tại sao LSTM/GRU vượt trội hơn RNN và phân loại các trường hợp mô hình đoán sai.
 
 ---
 
@@ -86,375 +88,366 @@
 ### 1. Nội dung học
 
 **A. Nền tảng Transformer và LLM**
-- Hiểu kiến trúc Transformer, Self-Attention, Positional Encoding và Embeddings.
-- Phân biệt Transformer với RNN/LSTM; phân biệt Encoder-only, Decoder-only và Encoder-Decoder.
-- Tìm hiểu cách LLM được huấn luyện và sinh văn bản; hiểu token, context window và giới hạn đầu vào.
-- Tổng quan về các LLM phổ biến và tiêu chí lựa chọn mô hình theo chất lượng, chi phí và tài nguyên.
+- Kiến trúc Transformer: Self-Attention, Multi-Head Attention, Positional Encoding, Feed-Forward layers và Residual Connections.
+- So sánh sự khác biệt bản chất giữa Transformer và kiến trúc tuần tự (RNN/LSTM).
+- Phân loại các nhánh kiến trúc: Encoder-only (BERT), Decoder-only (GPT, LLaMA), Encoder-Decoder (T5).
+- Cơ chế huấn luyện trước (Pre-training), căn chỉnh (Alignment) và sinh văn bản (Autoregressive generation).
+- Khái niệm token, context window, attention mask và giới hạn độ dài đầu vào.
+- Tiêu chí lựa chọn mô hình: chất lượng, chi phí API, tài nguyên GPU và độ trễ.
 
 **B. Prompt Engineering**
-- Học các kỹ thuật zero-shot, few-shot, instruction prompting và prompt template.
-- Tìm hiểu ảnh hưởng của context, giới hạn token và cách viết prompt đến chất lượng đầu ra.
-- Thực hành kiểm soát định dạng đầu ra bằng JSON và xây dựng prompt có cấu trúc.
+- Các kỹ thuật prompting cơ bản và nâng cao: Zero-shot, Few-shot, Instruction Prompting, Chain-of-Thought (CoT).
+- Quản lý context window, tối ưu lượng token và kỹ thuật tạo prompt template có cấu trúc.
+- Kiểm soát định dạng đầu ra (Structured Outputs: JSON schema, Markdown, key-value).
 
 **C. Đánh giá mô hình và Benchmark**
-- Xây dựng bộ câu hỏi kiểm thử cùng đáp án tham chiếu và tiêu chí đánh giá.
-- Đánh giá độ chính xác, mức độ liên quan, khả năng tuân thủ yêu cầu và tính nhất quán.
-- So sánh các prompt hoặc mô hình trên cùng bộ dữ liệu kiểm thử.
-- Ghi lại kết quả thực nghiệm, phân tích lỗi và đề xuất cải thiện.
+- Thiết kế bộ dữ liệu kiểm thử chuẩn (Ground truth test set) và tiêu chí đánh giá định lượng.
+- Các tiêu chí: độ chính xác, mức độ liên quan, tuân thủ hướng dẫn (instruction-following) và tính nhất quán.
+- Đo lường và đối chiếu kết quả thực nghiệm giữa các prompt và mô hình khác nhau.
 
 **D. Phân biệt RAG và Fine-tuning**
-- Hiểu nguyên lý hoạt động, ưu điểm và hạn chế của RAG và Fine-tuning.
-- Biết khi nào nên dùng RAG, Fine-tuning hoặc kết hợp cả hai.
-- Hiểu cơ bản về PEFT/LoRA để fine-tune mô hình nhỏ với tài nguyên hạn chế.
-- Biết cách đánh giá và so sánh hai phương pháp theo cùng bài toán.
+- Bản chất kỹ thuật, ưu nhược điểm và chi phí của RAG vs Fine-tuning:
 
-### 2. Video học tập
+| Tiêu chí | RAG (Retrieval-Augmented Generation) | Fine-tuning (PEFT / LoRA) |
+| :--- | :--- | :--- |
+| **Mục đích** | Bổ sung kiến thức động từ tài liệu ngoài | Căn chỉnh hành vi, phong cách, định dạng chuyên biệt |
+| **Cập nhật dữ liệu** | Nhanh chóng, chỉ cần cập nhật kho vector/tài liệu | Phải huấn luyện lại hoặc fine-tune tiếp tục |
+| **Chi phí ban đầu** | Thấp, tận dụng mô hình có sẵn | Đòi hỏi tài nguyên tính toán (GPU) và dữ liệu huấn luyện |
+| **Phù hợp khi** | Hỏi đáp tài liệu, dữ liệu biến động liên tục, cần dẫn nguồn | Chuẩn hóa giọng văn, format output nghiêm ngặt, domain hẹp |
 
-- Video 1: https://www.youtube.com/live/VCq4YFYAj-Q?si=fQPAbUMXpS35tmMD
-- Video 2: https://www.youtube.com/playlist?list=PLqL-7eLmqd9V3faivSAST76YQClS44dSz
+### 2. Video & Tài liệu học
+- **Video bài giảng:**
+  - Video 1 (Kiến trúc & Cơ chế Attention): https://www.youtube.com/live/VCq4YFYAj-Q?si=fQPAbUMXpS35tmMD
+  - Video 2 (Playlist LLMs & Transformer): https://www.youtube.com/playlist?list=PLqL-7eLmqd9V3faivSAST76YQClS44dSz
+- **Tài liệu chuyên sâu:**
+  - Paper gốc *Attention Is All You Need*: https://arxiv.org/abs/1706.03762
+  - Hugging Face LLM Course: https://huggingface.co/learn/llm-course/
+  - Hugging Face Transformers: https://huggingface.co/docs/transformers/
+  - OpenAI Prompt Engineering Guide: https://developers.openai.com/api/docs/guides/prompt-engineering
+  - Hugging Face PEFT (LoRA/QLoRA): https://huggingface.co/docs/peft/index
+  - Hugging Face Transformers Trainer: https://huggingface.co/docs/transformers/main_classes/trainer
+  - Hugging Face Evaluate: https://huggingface.co/docs/evaluate/
 
-### 3. Tài liệu học
+### 3. Bài tập thực hành
 
-**Transformer và LLM**
-- Paper gốc *Attention Is All You Need*: https://arxiv.org/abs/1706.03762
-- Hugging Face LLM Course: https://huggingface.co/learn/llm-course/
-- Hugging Face Transformers: https://huggingface.co/docs/transformers/
+**Bài 1 – Thử nghiệm kỹ thuật Prompt Engineering**
+- Chọn một bài toán thực tế (ví dụ: phân loại ticket hỗ trợ hoặc trích xuất thông tin khách hàng).
+- Thiết kế 10 trường hợp kiểm thử và so sánh 3 phong cách: Zero-shot, Few-shot và Instruction Prompting kèm ràng buộc JSON.
+- Đánh giá tỷ lệ tuân thủ định dạng và chất lượng câu trả lời.
 
-**Prompt Engineering**
-- OpenAI Prompt Engineering: https://developers.openai.com/api/docs/guides/prompt-engineering
+**Bài 2 – Thí nghiệm Context Window & Token Budget**
+- Thử nghiệm cung cấp context ở 3 mức: ngắn gọn, đầy đủ và context dài có chèn thông tin nhiễu (distractor).
+- Thay đổi `max_tokens` và nhiệt độ `temperature`.
+- Ghi nhận chất lượng đầu ra, thời gian sinh (latency) và chi phí token.
 
-**Fine-tuning tiết kiệm tài nguyên**
-- Hugging Face PEFT: https://huggingface.co/docs/peft/index
-- Hugging Face Transformers Trainer: https://huggingface.co/docs/transformers/main_classes/trainer
+**Bài 3 – Xây dựng Benchmark kiểm thử LLM**
+- Chuẩn bị bộ test 30–50 câu hỏi có đáp án chuẩn (ground truth).
+- Xây dựng thang điểm đánh giá (accuracy, format compliance).
+- Chạy đánh giá tự động và xuất báo cáo kết quả ra file CSV/JSON.
 
-**RAG và đánh giá**
-- Hugging Face RAG documentation: https://huggingface.co/docs/transformers/model_doc/rag
-- Ragas – đánh giá hệ thống RAG: https://docs.ragas.io/en/latest/
-- Hugging Face Evaluate: https://huggingface.co/docs/evaluate/
+**Bài 4 – Xây dựng RAG nguyên bản (Prototype)**
+- Tải một tập tài liệu PDF, thực hiện: Đọc PDF → Chunking → Tạo Embeddings → Vector search → Sinh câu trả lời với context.
+- Yêu cầu mô hình bắt buộc trích dẫn nguồn (số trang, tên file).
 
-### 4. Bài tập thực hành
+**Bài 5 – Fine-tuning mô hình nhỏ với LoRA/PEFT**
+- Lựa chọn mô hình nền nhỏ (ví dụ: Qwen2.5-0.5B / LLaMA-1B).
+- Chuẩn bị tập dữ liệu huấn luyện theo định dạng instruction/output, chia train/val.
+- Huấn luyện bằng thư viện PEFT/LoRA, theo dõi loss và đánh giá trước/sau fine-tuning.
 
-**Bài 1 – Thử nghiệm Prompt Engineering**
-- Chọn một tác vụ, chẳng hạn phân loại phản hồi khách hàng hoặc hỏi đáp.
-- Tạo 10 câu hỏi và thử nghiệm 3 cách prompting: zero-shot, few-shot và instruction prompting.
-- Ghi lại kết quả, xác định prompt nào tốt hơn và giải thích nguyên nhân.
+**Bài 6 – Nghiên cứu so sánh RAG vs Fine-tuning**
+- Áp dụng cả 2 phương pháp trên cùng một bài toán và cùng bộ câu hỏi kiểm thử.
+- Lập bảng so sánh chi tiết: độ chính xác, chi phí tài nguyên, thời gian phản hồi, khả năng cập nhật tri thức mới.
 
-**Bài 2 – Thí nghiệm Context và Token**
-- Thử nghiệm với context ngắn, context dài và context có thông tin nhiễu.
-- Thay đổi độ dài đầu vào và giới hạn token đầu ra.
-- Ghi nhận chất lượng câu trả lời, số token sử dụng và thời gian phản hồi.
-
-**Bài 3 – Xây dựng Benchmark**
-- Tạo bộ kiểm thử khoảng 30–50 câu hỏi có đáp án tham chiếu.
-- Xây dựng tiêu chí đánh giá và lưu kết quả vào CSV/JSON.
-- So sánh các prompt hoặc mô hình trên cùng bộ câu hỏi để bảo đảm kết quả có thể đối chiếu.
-
-**Bài 4 – Xây dựng hệ thống RAG**
-- Sử dụng một tập tài liệu PDF làm nguồn tri thức.
-- Thực hiện pipeline: đọc tài liệu → chia chunk → tạo embeddings → truy xuất → sinh câu trả lời.
-- Yêu cầu câu trả lời trích dẫn tài liệu nguồn.
-- Đánh giá độ chính xác, khả năng truy xuất đúng đoạn và tính chính xác của trích dẫn.
-
-**Bài 5 – Fine-tuning mô hình nhỏ**
-- Chọn mô hình nhỏ phù hợp với tài nguyên máy và một tác vụ cụ thể.
-- Chuẩn bị dataset theo định dạng phù hợp, chia train/validation và fine-tune bằng LoRA/PEFT.
-- Đánh giá mô hình trước và sau fine-tuning trên cùng bộ kiểm thử.
-- Ghi lại cấu hình, thời gian huấn luyện, kết quả và hạn chế.
-
-**Bài 6 – So sánh RAG và Fine-tuning**
-- Sử dụng cùng bài toán và bộ câu hỏi kiểm thử để so sánh hai phương pháp.
-- So sánh độ chính xác, chi phí, độ trễ, khả năng cập nhật dữ liệu và mức độ phù hợp với yêu cầu.
-- Tổng hợp kết quả bằng bảng và viết báo cáo kỹ thuật, đưa ra kết luận nên chọn phương pháp nào trong từng tình huống.
-
-### 5. Sản phẩm đầu ra
-
-- Notebook thực hành Prompt Engineering và Transformer/LLM.
-- Bộ benchmark có câu hỏi, đáp án tham chiếu và kết quả đánh giá.
-- Một hệ thống RAG hỏi đáp tài liệu PDF có trích dẫn nguồn.
-- Một mô hình nhỏ đã fine-tune cùng kết quả đánh giá trước/sau huấn luyện.
-- Báo cáo so sánh RAG và Fine-tuning, kèm mã nguồn và hướng dẫn chạy.s
+### 4. Sản phẩm đầu ra
+- Notebook hoàn chỉnh thực hành Prompt Engineering, Benchmark và Transformer.
+- Mã nguồn pipeline RAG cơ bản có trích dẫn tài liệu.
+- Script fine-tuning mô hình nhỏ với PEFT/LoRA kèm checkpoint và log đánh giá.
+- Báo cáo phân tích so sánh RAG vs Fine-tuning chi tiết.
 
 ---
 
-## Module 4: RAG
+## Module 4: RAG (Retrieval-Augmented Generation)
 
-- Hiểu khái niệm RAG và workflow cơ bản của một hệ thống truy xuất kết hợp sinh câu trả lời.
-- Tìm hiểu các thành phần chính: chunking, embeddings, vector store, retrieval và generation.
-- Cách chuẩn bị tài liệu và tối ưu dữ liệu đầu vào cho hệ thống RAG.
-- Thực hành xây dựng một RAG chatbot cơ bản có thể trả lời theo tài liệu.
+### 1. Nội dung học
+- Tổng quan kiến trúc RAG: Workflow chuẩn từ câu hỏi người dùng đến câu trả lời hoàn chỉnh.
+- Các thành phần cốt lõi:
+  - **Document Loaders & Preprocessing:** Đọc PDF, Word, Markdown, làm sạch dữ liệu.
+  - **Chunking Strategies:** Fixed-size chunking, sentence splitting, semantic chunking; vai trò của chunk size và overlap.
+  - **Embeddings:** Vector representation của văn bản, sự khác biệt giữa sparse embedding (BM25) và dense embedding.
+  - **Vector Database:** Lưu trữ, lập chỉ mục (HNSW, IVFFlat) và tìm kiếm độ tương đồng (Cosine, Dot product, Euclidean).
+  - **Retrieval & Reranking:** Top-k retrieval, lọc metadata, kết hợp Hybrid Search (BM25 + Dense).
+  - **Generation:** Xây dựng system prompt, nhồi context, ràng buộc chống ảo giác (hallucination).
 
-- build rag bằng ollama: https://www.youtube.com/watch?v=KjGXSNHY-q4&t=217s
-- hướng dẫn chuẩn từ langchain build rag bằng api: https://docs.langchain.com/oss/python/deepagents/rag
-- bài báo gốc rag: https://arxiv.org/abs/2005.11401
+### 2. Video & Tài liệu học
+- **Video bài giảng:**
+  - Build Local RAG với Ollama: https://www.youtube.com/watch?v=KjGXSNHY-q4&t=217s
+  - Đánh giá RAG với Ragas: https://www.youtube.com/watch?v=5fp6e5nhJRk
+- **Tài liệu tham khảo:**
+  - Paper gốc về RAG (Lewis et al.): https://arxiv.org/abs/2005.11401
+  - Cài đặt Ollama: https://ollama.com/download
+  - Embedding Model nomic-embed-text: https://ollama.com/library/nomic-embed-text
+  - ChromaDB Documentation: https://docs.trychroma.com/docs/overview/introduction
+  - LangChain RAG Guide: https://docs.langchain.com/oss/python/deepagents/rag
+  - Ragas Framework: https://docs.ragas.io/en/latest/
 
-### Bài tập: 
-- hướng dẫn tải ollama: https://ollama.com/download
-- lưu vector local: https://docs.trychroma.com/docs/overview/introduction
-- embedding model: https://ollama.com/library/nomic-embed-text
+### 3. Bài tập thực hành
 
-#### Bài 1 — Local LLM và Prompting
-**Cấp độ 1 · 30–45 phút**  
-**Mục tiêu:** Hiểu cách gọi LLM local và ảnh hưởng của prompt.
+#### Bài 1 — Local LLM & Prompt Constraint
+- **Mục tiêu:** Nắm vững cách gọi LLM cục bộ bằng thư viện Python `ollama` và kiểm soát câu trả lời.
+- **Thực hiện:**
+  1. Khởi chạy mô hình cục bộ `qwen2.5:3b`.
+  2. Đưa vào một đoạn quy định/nội quy mẫu.
+  3. Thử nghiệm 3 biến thể prompt: Không hướng dẫn, Có gán vai trò (role-play), Có context kèm điều kiện nghiêm ngặt *"chỉ trả lời dựa trên context, không suy diễn"*.
+- **Điều kiện hoàn thành:** Lưu 10 mẫu test vào CSV; chỉ rõ trường hợp prompt thành công chặn được ảo giác (hallucination).
 
-**Thực hiện**
-1. Gọi qwen2.5:3b từ Python bằng thư viện ollama.
-2. Đặt câu hỏi về một đoạn nội quy mẫu.
-3. Thử ba prompt: không có hướng dẫn, có vai trò, có context và quy tắc chỉ trả lời theo context.
-4. So sánh câu trả lời và thời gian phản hồi.
+#### Bài 2 — Pipeline RAG Local từ đầu (End-to-End)
+- **Mục tiêu:** Tự triển khai đầy đủ pipeline RAG 100% offline, không dùng API trả phí.
+- **Thực hiện:**
+  1. Sử dụng `pypdf` để đọc và phân tích 3–5 file PDF tài liệu.
+  2. Chia văn bản thành các chunks có độ dài phù hợp.
+  3. Dùng mô hình `nomic-embed-text` qua Ollama để chuyển đổi chunks thành vectors.
+  4. Lưu vectors, text chunks và metadata (file name, page number) vào ChromaDB.
+  5. Khi nhận câu hỏi: vector search lấy top-3 chunks liên quan nhất và gửi kèm context đến `qwen2.5:3b`.
+  6. Trả về câu trả lời có trích dẫn rõ nguồn (tên tài liệu, trang số).
+- **Điều kiện hoàn thành:** Hệ thống trả lời chính xác theo tài liệu; khi không có dữ liệu trong context, hệ thống từ chối lịch sự ("Không đủ thông tin trong tài liệu").
 
-**Điều kiện hoàn thành:** Lưu ít nhất 10 câu hỏi và kết quả vào CSV; xác định trường hợp mô hình trả lời thông tin không có trong tài liệu.
+#### Bài 3 — Tối ưu hóa Chunking và Retrieval
+- **Mục tiêu:** Tìm cấu hình tối ưu thông qua thực nghiệm đo lường.
+- **Thực nghiệm:** Thiết lập 3 cấu hình thử nghiệm:
 
-#### Bài 2 — Xây dựng pipeline RAG local
-**Cấp độ 2 · 2–3 giờ**  
-**Mục tiêu:** Tự triển khai đầy đủ pipeline, không dùng API trả phí.
+| Cấu hình | Kích thước Chunk (Chunk Size) | Độ gối đầu (Overlap) | Top-k Retrieval |
+| :---: | :---: | :---: | :---: |
+| **A** | 300 tokens | 0 | 3 |
+| **B** | 500 tokens | 50 tokens | 3 |
+| **C** | 800 tokens | 50 tokens | 5 |
 
-**Thực hiện**
-1. Chuẩn bị 3–5 tài liệu PDF/TXT.
-2. Dùng pypdf để đọc PDF.
-3. Chia văn bản thành chunks.
-4. Gọi nomic-embed-text để tạo embeddings.
-5. Lưu vector, chunks và metadata vào ChromaDB.
-6. Khi có câu hỏi, truy xuất top-3 chunks rồi gửi cho qwen2.5:3b.
-7. Trả về câu trả lời kèm tên file và trang nguồn.
+- Đánh giá trên 20 câu hỏi chuẩn:
+  - Tỷ lệ tìm thấy đoạn chứa câu trả lời đúng (Hit Rate).
+  - Số lượng chunk nhiễu/không liên quan bị kéo theo.
+  - Thời gian truy xuất (Retrieval latency) và thời gian sinh câu trả lời (Generation latency).
+- **Điều kiện hoàn thành:** Lập bảng so sánh số liệu và phân tích lý do chọn cấu hình tối ưu.
 
-**Điều kiện hoàn thành:** Chatbot trả lời được câu hỏi dựa trên tài liệu; nếu không tìm thấy bằng chứng phù hợp thì báo không đủ thông tin.  
-**Tham khảo:** Ollama Embeddings
+#### Bài 4 — Đánh giá chất lượng RAG chuyên sâu
+- **Mục tiêu:** Kiểm tra các lỗi phổ biến trong bài toán doanh nghiệp.
+- **Bộ câu hỏi kiểm thử:**
+  - 10 câu có đáp án rõ ràng trong một đoạn.
+  - 5 câu yêu cầu tổng hợp thông tin từ nhiều trang/đoạn khác nhau.
+  - 5 câu bẫy không hề có thông tin trong tài liệu.
+- **Các tiêu chí đánh giá:**
+  - **Retrieval:** Tỷ lệ truy xuất đúng đoạn cần thiết.
+  - **Faithfulness (Độ trung thực):** Mọi luận điểm trong câu trả lời có được tài liệu chứng minh không.
+  - **Abstention (Khả năng từ chối):** Hệ thống có từ chối khi thiếu dữ liệu không.
+  - **Latency:** Đo thời gian phản hồi từng bước.
+- **Điều kiện hoàn thành:** Báo cáo phân tích ít nhất 5 trường hợp lỗi, nguyên nhân gốc rễ và giải pháp khắc phục (khuyến khích dùng Ragas).
 
-#### Bài 3 — Tối ưu chunking và retrieval
-**Cấp độ 3 · 2–3 giờ**  
-**Mục tiêu:** Tìm ra cấu hình tốt hơn bằng thực nghiệm.
-
-Thử các cấu hình sau:
-
-| Thí nghiệm | Kích thước chunk | Overlap | Top-k |
-| :--- | :--- | :--- | :--- |
-| A | 300 tokens | 0 | 3 |
-| B | 500 tokens | 50 | 3 |
-| C | 800 tokens | 50 | 5 |
-
-Với 20 câu hỏi có đáp án được xác định trước:
-- Ghi lại chunks được truy xuất.
-- Đánh giá có tìm thấy đoạn chứa đáp án hay không.
-- Đếm số đoạn không liên quan.
-- Đo thời gian truy xuất và thời gian sinh câu trả lời.
-
-**Điều kiện hoàn thành:** Có bảng so sánh và giải thích tại sao chọn cấu hình cuối cùng. Lưu ý: đây là kích thước thử nghiệm ban đầu, không phải cấu hình tối ưu cho mọi tài liệu.
-
-#### Bài 4 — Đánh giá chất lượng RAG
-**Cấp độ 4 · 2 giờ**  
-**Mục tiêu:** Kiểm tra các lỗi thường gặp trong ứng dụng doanh nghiệp.
-
-Tạo bộ câu hỏi gồm:
-- 10 câu có đáp án rõ ràng.
-- 5 câu cần tổng hợp nhiều đoạn.
-- 5 câu không có đáp án trong tài liệu.
-
-Đánh giá:
-- Retrieval: Có tìm đúng đoạn cần thiết không?
-- Faithfulness: Câu trả lời có được hỗ trợ bởi tài liệu không?
-- Abstention: Hệ thống có từ chối khi thiếu bằng chứng không?
-- Latency: Mỗi câu mất bao lâu?
-
-**Điều kiện hoàn thành:** Báo cáo ít nhất 5 lỗi, xác định nguyên nhân và đề xuất cách sửa. Có thể dùng Ragas để tự động hóa một phần đánh giá.
-
-#### Bài 5 — Dự án tổng hợp: Local Enterprise RAG
-**Dự án portfolio**
-
-Xây dựng chatbot hỏi đáp tài liệu công ty chạy hoàn toàn local.
-
-**Yêu cầu**
-- Backend FastAPI với endpoint /ingest, /query và /health.
-- Ollama chạy LLM và embedding model.
-- ChromaDB lưu vector bền vững.
-- Trả lời có trích dẫn tên file, trang và đoạn liên quan.
-- Xử lý PDF lỗi, tài liệu rỗng, câu hỏi không liên quan và lỗi Ollama.
-- Có logging, bộ kiểm thử 30 câu hỏi, README và Docker.
-- Đo thời gian phản hồi và so sánh ít nhất hai cấu hình retrieval.
-
-**Đầu ra GitHub:** Source code, tài liệu hướng dẫn, bộ câu hỏi kiểm thử, kết quả đánh giá và sơ đồ kiến trúc.
+### 4. Dự án tổng hợp: Local Enterprise RAG (Portfolio)
+- Xây dựng ứng dụng hỏi đáp tài liệu doanh nghiệp chạy hoàn toàn cục bộ:
+  - **Backend:** FastAPI với các endpoint chuẩn RESTful: `/ingest` (tải tài liệu), `/query` (hỏi đáp), `/health` (kiểm tra trạng thái).
+  - **Core LLM & Embeddings:** Quản trị qua Ollama (`nomic-embed-text` + `qwen2.5:3b`).
+  - **Vector Database:** ChromaDB lưu trữ persistent trên đĩa.
+  - **Tính năng bắt buộc:** Trích dẫn nguồn (tên file, số trang, trích dẫn liên quan); xử lý lỗi file PDF hỏng, tài liệu rỗng; chống timeout.
+  - **Chất lượng:** Logging chi tiết, bộ test suite 30 câu hỏi tự động, Dockerfile và Docker Compose.
 
 ---
 
 ## Module 5: AI Agents
 
-- Hiểu AI Agent là gì và cách agent khác với chatbot hoặc RAG chatbot.
-- Tìm hiểu các thành phần cốt lõi của agent: model, memory, tools và workflow.
-- Cách cho agent sử dụng công cụ để xử lý các tác vụ nhiều bước.
-- Thực hành xây dựng một AI Agent đơn giản cho bài toán thực tế.
+### 1. Nội dung học
+- Định nghĩa AI Agent và sự khác biệt giữa Chatbot thông thường, RAG Chatbot và AI Agent:
+  - Chatbot: Chỉ giao tiếp phản hồi.
+  - RAG: Tìm kiếm thông tin và tổng hợp.
+  - AI Agent: Tự lập kế hoạch (Reasoning/Planning), gọi công cụ (Tool calling/Action), lưu nhớ ngữ cảnh (Memory) và lặp lại để đạt mục tiêu.
+- Các kiến trúc Agent phổ biến: ReAct (Reasoning + Acting), Plan-and-Solve, Tool Use.
+- Quản lý bộ nhớ (Memory): Short-term memory (trong hội thoại) và Long-term memory (lưu trữ vector/cơ sở dữ liệu).
+- Xử lý lỗi khi gọi công cụ, kiểm soát an toàn (guardrails) và tránh lặp vô hạn (infinite loop).
 
-- https://huggingface.co/learn/agents-course/en/unit1/introduction
-- https://docs.ollama.com/capabilities/tool-calling
+### 2. Tài liệu học
+- **Hugging Face Agents Course:** https://huggingface.co/learn/agents-course/en/unit1/introduction
+- **Ollama Tool Calling Documentation:** https://docs.ollama.com/capabilities/tool-calling
+- **LangGraph Persistence:** https://langchain-ai.github.io/langgraph/how-tos/persistence/
+- **Dataset thực hành phân tích:** UCI Online Retail Dataset
 
-### Bài 1 — Tạo tool cho agent
-**Cơ bản · 1 giờ**
+### 3. Bài tập thực hành
 
-Dùng Ollama để xây dựng agent có ba công cụ Python:
-- calculator(expression): tính toán biểu thức an toàn.
-- search_notes(query): tìm kiếm trong file ghi chú cục bộ.
-- get_current_time(): trả về thời gian hiện tại của máy.
+#### Bài 1 — Tạo Tool Calling cơ bản cho Agent
+- **Mục tiêu:** Xây dựng Agent chạy local có khả năng tự quyết định gọi công cụ Python.
+- **Tập công cụ:**
+  - `calculator(expression)`: Thực thi tính toán số học an toàn.
+  - `search_notes(query)`: Tra cứu thông tin trong file ghi chú cục bộ.
+  - `get_current_time()`: Lấy thời gian hiện tại của hệ thống.
+- **Kiểm tra:** Yêu cầu người dùng cần kết hợp: tìm số liệu trong ghi chú → tính toán số học → trả lời ngày giờ báo cáo.
+- **Đạt yêu cầu khi:** Agent gọi đúng công cụ với tham số chuẩn xác, dùng kết quả thực tế để trả lời, không bịa đặt số liệu.
 
-**Bài kiểm tra:** Yêu cầu agent tìm một số liệu trong ghi chú, tính tổng rồi giải thích kết quả.  
-**Đạt yêu cầu khi:** Agent thực sự gọi đúng công cụ, dùng kết quả công cụ trong câu trả lời và không tự bịa kết quả tính toán.  
-**Tài liệu:** Ollama Tool Calling.
+#### Bài 2 — Agent có State & Conversation Memory
+- **Mục tiêu:** Giữ ngữ cảnh hội thoại xuyên suốt nhiều lượt chat và phân tách độc lập các phiên người dùng.
+- **Yêu cầu:**
+  - Ghi nhớ tên dự án, mục tiêu và sở thích người dùng cung cấp ở các lượt trước.
+  - Quản lý phiên hội thoại độc lập theo `session_id`.
+  - Đảm bảo 2 session khác nhau không bị rò rỉ dữ liệu qua lại.
+- **Đạt yêu cầu khi:** Agent truy hồi chính xác thông tin cũ của đúng phiên làm việc.
 
-### Bài 2 — Agent có memory
-**Trung bình · 1–2 giờ**
+#### Bài 3 — Agent xử lý quy trình nhiều bước (Multi-step Task)
+- **Tình huống:** Người dùng yêu cầu phân tích một file CSV dữ liệu bán hàng.
+- **Workflow của Agent:**
+  1. Kiểm tra file tồn tại và định dạng hợp lệ.
+  2. Đọc và tiền xử lý dữ liệu bằng Pandas qua tool.
+  3. Gọi tool tính toán doanh thu theo nhóm sản phẩm.
+  4. Gọi tool tìm top sản phẩm bán chạy nhất.
+  5. Tổng hợp dữ liệu thành báo cáo hoàn chỉnh dưới định dạng Markdown.
+- **Đạt yêu cầu khi:** Mỗi bước có input/output minh bạch, xử lý ngoại lệ khi file lỗi và tuyệt đối không thực thi lệnh Python tùy ý không an toàn.
 
-Xây dựng agent nhớ ngữ cảnh hội thoại qua nhiều lượt.
-
-**Nhiệm vụ**
-- Ghi nhớ tên dự án và mục tiêu do người dùng cung cấp.
-- Trả lời câu hỏi tiếp nối dựa trên lịch sử.
-- Lưu lịch sử theo session_id.
-- Kiểm tra hai phiên người dùng không bị lẫn dữ liệu.
-
-**Đạt yêu cầu khi:** Agent nhớ được thông tin trong đúng phiên và không nhầm giữa hai phiên.  
-**Tài liệu:** LangGraph Persistence.
-
-### Bài 3 — Agent xử lý công việc nhiều bước
-**Nâng cao · 2–3 giờ**
-
-**Tình huống:** Người dùng yêu cầu phân tích file CSV bán hàng.
-
-Agent cần:
-1. Kiểm tra file có tồn tại và đúng định dạng.
-2. Đọc dữ liệu bằng Pandas.
-3. Gọi tool tính doanh thu theo sản phẩm.
-4. Gọi tool tìm sản phẩm bán chạy nhất.
-5. Tổng hợp kết quả thành báo cáo Markdown.
-
-**Đạt yêu cầu khi:** Mỗi bước có đầu vào và đầu ra rõ ràng, xử lý được file lỗi và không thực thi lệnh Python tùy ý do LLM tự sinh.  
-**Dữ liệu mẫu:** UCI Online Retail.
-
-### Bài 4 — Dự án tổng hợp: Local AI Work Assistant
-**Portfolio**
-
-Xây dựng trợ lý công việc local bằng Ollama, Python và FastAPI.
-
-**Chức năng**
-- Hỏi đáp trên tài liệu nội bộ bằng RAG.
-- Đọc CSV và thống kê bằng các tool đã định nghĩa.
-- Nhớ lịch sử theo phiên.
-- Tạo báo cáo Markdown/CSV.
-- Ghi log tool được gọi, lỗi và thời gian xử lý.
-
-**Yêu cầu chất lượng**
-- Có ít nhất 20 test case.
-- Có giới hạn số lần gọi tool để tránh vòng lặp vô hạn.
-- Có timeout và xử lý lỗi.
-- Không tự ý xóa file, gửi dữ liệu ra ngoài hoặc thực hiện hành động ghi dữ liệu quan trọng khi chưa được xác nhận.
-- Có README, sơ đồ workflow và hướng dẫn chạy local.
+### 4. Dự án tổng hợp: Local AI Work Assistant (Portfolio)
+- Xây dựng trợ lý ảo hỗ trợ công việc chạy cục bộ bằng Python, FastAPI và Ollama:
+  - **Hỏi đáp tài liệu nội bộ:** Tích hợp RAG engine.
+  - **Phân tích số liệu:** Bộ công cụ đọc bảng tính CSV, thống kê và vẽ biểu đồ.
+  - **Bộ nhớ phiên:** Quản lý hội thoại đa phiên.
+  - **Báo cáo tự động:** Xuất kết quả ra file Markdown/CSV.
+  - **Tiêu chuẩn an toàn:** Giới hạn số lần gọi tool tối đa (max iterations = 5) để chặn vòng lặp vô hạn; kiểm tra quyền xác nhận người dùng trước các thao tác ghi/xóa dữ liệu; ghi log có cấu trúc (structured logging) theo dõi thời gian và trạng thái gọi tool.
 
 ---
 
 ## Module 6: AI Deployment in Production
 
-- Tổng quan về cách đưa chatbot hoặc AI Agent từ bản demo sang ứng dụng thực tế.
-- Xây dựng server và client cơ bản để kết nối mô hình và xử lý request.
-- Chạy thử, đánh giá các kịch bản sử dụng và theo dõi hiệu năng hệ thống.
-- Tìm hiểu các lưu ý quan trọng khi triển khai AI trong môi trường production.
+### 1. Bối cảnh & Mục tiêu thực tế
+- Chuyển giao ứng dụng AI từ bản thử nghiệm (prototype) sang dịch vụ production sẵn sàng phục vụ người dùng thực tế:
+  - Cung cấp API chuẩn cho các client (Web, Mobile).
+  - Khả năng chịu lỗi cao: Xử lý ngoại lệ khi LLM service gián đoạn, database mất kết nối hoặc tài liệu lỗi.
+  - Đảm bảo chất lượng câu trả lời và trích dẫn.
+  - Giám sát hiệu năng hệ thống, phát hiện điểm nghẽn và đo tải thực tế.
 
-- https://docs.docker.com/guides/python/
-- https://fastapi.tiangolo.com/tutorial/
-- https://opentelemetry.io/docs/languages/python/
+### 2. Yêu cầu kỹ thuật chi tiết
 
-### 1. Bối cảnh thực tế
-Một doanh nghiệp muốn xây dựng chatbot nội bộ giúp nhân viên hỏi đáp từ tài liệu PDF. Hệ thống phải cung cấp API cho ứng dụng client, trả lời dựa trên tài liệu, xử lý lỗi khi mô hình không hoạt động, kiểm tra chất lượng câu trả lời và theo dõi hiệu năng khi có nhiều request.
+#### A. Xây dựng Server & Client (FastAPI + Ollama)
+Thiết kế hệ thống API backend bằng FastAPI:
 
-Bạn đóng vai trò AI Engineer phụ trách đưa ứng dụng từ prototype sang dịch vụ có thể triển khai và giám sát.
-
-### 2. Yêu cầu chức năng
-
-#### A. Xây dựng server và client
-Sử dụng Python, FastAPI và Ollama.
-
-| Endpoint | Yêu cầu |
+| Phương thức & Endpoint | Chức năng chính |
 | :--- | :--- |
-| `GET /health` | Kiểm tra backend còn hoạt động |
-| `GET /health/ready` | Kiểm tra các dependency cần thiết |
-| `POST /documents` | Upload và xử lý PDF |
-| `GET /documents/{id}` | Xem trạng thái xử lý tài liệu |
-| `POST /chat` | Hỏi đáp và trả về nguồn trích dẫn |
+| `GET /health` | Kiểm tra trạng thái hoạt động của backend service (Liveness probe) |
+| `GET /health/ready` | Kiểm tra tính sẵn sàng của các phụ thuộc: Ollama, Vector DB (Readiness probe) |
+| `POST /documents` | Nhận upload, xác thực và xử lý ingest file PDF vào hệ thống |
+| `GET /documents/{id}` | Truy vấn tiến độ và trạng thái xử lý của tài liệu |
+| `POST /chat` | Nhận câu hỏi, truy xuất context và trả lời kèm trích dẫn nguồn |
 
-Tạo một Python client có khả năng gọi API, hiển thị câu trả lời và xử lý response lỗi.
+Xây dựng kèm một Python Client mẫu để tương tác với API, render kết quả và bắt lỗi chuẩn xác.
 
-#### B. Xử lý các tình huống thực tế
-Hệ thống cần xử lý tối thiểu:
-- File không đúng định dạng, file rỗng hoặc vượt giới hạn kích thước.
-- Câu hỏi thiếu nội dung hoặc quá dài.
-- Không tìm thấy thông tin phù hợp trong tài liệu.
-- Ollama timeout hoặc ngừng hoạt động.
-- Database mất kết nối.
-- Nhiều request được gửi cùng lúc.
+#### B. Xử lý các tình huống thực tế (Edge cases & Resiliency)
+Hệ thống phải có xử lý lỗi và HTTP status code tương ứng cho các trường hợp:
+- File upload sai định dạng, file rỗng hoặc kích thước vượt ngưỡng cho phép (HTTP 400 / 413).
+- Câu hỏi rỗng hoặc vượt quá giới hạn độ dài token (HTTP 400 / 422).
+- Không tìm thấy dữ liệu liên quan trong kho tài liệu (Trả lời từ chối theo kịch bản, HTTP 200).
+- Dịch vụ Ollama bị treo, timeout hoặc ngừng hoạt động (HTTP 503 / 504 kèm thông báo rõ ràng).
+- Kết nối tới Vector Database bị đứt đoạn (HTTP 500 kèm logging cảnh báo).
+- Xử lý hàng đợi khi có nhiều request đồng thời.
 
-Mỗi tình huống phải có hành vi mong đợi, HTTP status code phù hợp và test chứng minh.
+#### C. Kiểm thử & Đánh giá (Testing & Evaluation)
+- **Software Testing:**
+  - Unit test cho module tiền xử lý dữ liệu, trích xuất text và kiểm tra logic validation.
+  - API testing tự động bằng `pytest` và `FastAPI TestClient`.
+  - Integration test kiểm thử luồng nghiệp vụ hoàn chỉnh: Upload → Ingest → Truy xuất → Trả lời.
+  - Áp dụng Mocking đối với các service LLM bên ngoài để test cô lập các tình huống lỗi.
+- **AI Evaluation:**
+  - Bộ benchmark tối thiểu 30 câu hỏi: câu hỏi có đáp án đơn, câu hỏi đa đoạn (multi-hop) và câu hỏi bẫy.
+  - Đo lường định lượng: Retrieval Recall@k, Faithfulness, Answer Correctness, Citation Accuracy.
+  - Sử dụng framework Ragas để tự động hóa quá trình đánh giá và lưu kết quả theo dõi.
 
-### 3. Yêu cầu kiểm thử và đánh giá
-Chia thành hai nhóm riêng biệt.
+#### D. Giám sát & Theo dõi hiệu năng (Observability & Performance)
+- **Tracing:** Tích hợp OpenTelemetry thu thập trace chi tiết cho từng request (thời gian tiền xử lý, thời gian vector search, thời gian LLM sinh câu trả lời).
+- **Chỉ số đo lường bắt buộc:**
 
-#### Nhóm 1 — Software testing
-- Unit test cho xử lý tài liệu, retrieval và validation.
-- API test bằng pytest và FastAPI TestClient.  
-  *FastAPI*
-- Integration test cho luồng upload → truy xuất → trả lời.
-- Mock model khi kiểm thử lỗi để không phụ thuộc vào model đang chạy.
-- Chạy toàn bộ test tự động trước khi đóng gói ứng dụng.
-
-#### Nhóm 2 — AI evaluation
-Tạo dataset gồm tối thiểu 30 câu hỏi và đáp án tham chiếu, bao gồm câu hỏi có đáp án, không có đáp án và câu hỏi dễ gây nhầm lẫn.
-
-Đo các chỉ số:
-- Retrieval Recall@k.
-- Faithfulness.
-- Answer correctness.
-- Citation correctness.
-
-Sử dụng Ragas khi phù hợp; lưu kết quả thành CSV hoặc JSON để so sánh các cấu hình retrieval khác nhau. Ragas có các metric phục vụ đánh giá retrieval và chất lượng câu trả lời.  
-*Ragas*
-
-### 4. Yêu cầu theo dõi hiệu năng
-Tích hợp OpenTelemetry để ghi nhận trace cho từng request và các bước xử lý chính.  
-*OpenTelemetry*
-
-Các chỉ số bắt buộc:
-
-| Chỉ số | Cần trả lời câu hỏi |
+| Chỉ số (Metric) | Ý nghĩa nghiệp vụ |
 | :--- | :--- |
-| p50 và p95 latency | Request mất bao lâu? |
-| Error rate | Bao nhiêu phần trăm request thất bại? |
-| Throughput | Xử lý được bao nhiêu request mỗi giây? |
-| Retrieval latency | Tìm kiếm tài liệu mất bao lâu? |
-| LLM latency | Model mất bao lâu để tạo câu trả lời? |
+| **p50 & p95 Latency** | Thời gian phản hồi trung vị và thời gian phản hồi ở nhóm 95% request |
+| **Error Rate** | Tỷ lệ phần trăm số request gặp lỗi trên tổng số request |
+| **Throughput (RPS)** | Số lượng request hệ thống có thể xử lý thành công trong một giây |
+| **Retrieval Latency** | Thời gian tìm kiếm và xếp hạng tài liệu trong Vector Database |
+| **LLM Inference Latency** | Thời gian mô hình tạo token và hoàn thành câu trả lời |
 
-Sử dụng công cụ load testing như Locust để chạy thử ở mức 1, 5 và 10 người dùng đồng thời. Ghi rõ cấu hình máy và model, vì kết quả phụ thuộc vào tài nguyên local.
+- **Load Testing:** Sử dụng Locust mô phỏng tải ở các mức 1, 5 và 10 người dùng đồng thời. Tìm nút thắt hiệu năng (bottleneck), thử nghiệm thay đổi `chunk_size` hoặc `top_k` để đánh giá sự đánh đổi giữa tốc độ và độ chính xác.
 
-Bài thực hành bắt buộc: tìm ra nút thắt hiệu năng, thay đổi ít nhất một yếu tố như top_k, chunk size hoặc timeout, sau đó đo lại và so sánh kết quả.
+#### E. Đóng gói & Tiêu chuẩn triển khai (Docker & CI)
+- Đóng gói toàn bộ ứng dụng bằng Docker và Docker Compose (FastAPI backend, ChromaDB service).
+- Quản lý biến môi trường an toàn qua file `.env.example`, không commit bí mật (secrets).
+- Tích hợp pipeline kiểm thử tự động chạy qua CI trước khi build container.
+- Hướng dẫn triển khai chi tiết từng bước trong file `README.md`.
 
-### 5. Yêu cầu Docker và triển khai
-Đóng gói ứng dụng bằng Docker, sử dụng Docker Compose để quản lý các service cần thiết. Thực hiện theo Docker Python Guide.  
-*Docker Docs*
+### 3. Video & Tài liệu tham khảo
+- **Video thực hành:**
+  - FastAPI & Docker Compose: https://youtu.be/vH1q89WFOzg?si=p2KzP4rdKMz6hHiH
+  - Hướng dẫn Docker nâng cao: https://youtu.be/pg19Z8LL06w?si=Afycp1PfGQOlC8sL
+  - Kiểm thử phần mềm với Pytest: https://www.youtube.com/watch?v=gop9Or2V_80
+  - Đánh giá chất lượng RAG với Ragas: https://www.youtube.com/watch?v=5fp6e5nhJRk
+- **Tài liệu chính thức:**
+  - FastAPI Tutorial & Testing: https://fastapi.tiangolo.com/tutorial/ | https://fastapi.tiangolo.com/tutorial/testing/
+  - Docker Python Guide & Compose: https://docs.docker.com/guides/python/ | https://docs.docker.com/compose/
+  - Pytest Documentation: https://docs.pytest.org/en/stable/getting-started.html
+  - Ragas Metrics Guide: https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/
+  - OpenTelemetry Python: https://opentelemetry.io/docs/languages/python/
+  - Locust Load Testing: https://docs.locust.io/en/stable/
+  - Prometheus & Grafana: https://prometheus.io/docs/introduction/overview/ | https://grafana.com/docs/
 
-- youtube đánh giá bằng ragas: https://www.youtube.com/watch?v=5fp6e5nhJRk
-- kiểm thử bằng pytest: https://www.youtube.com/watch?v=gop9Or2V_80
-- fastapi và docker compose: https://youtu.be/vH1q89WFOzg?si=p2KzP4rdKMz6hHiH
-- https://youtu.be/pg19Z8LL06w?si=Afycp1PfGQOlC8sL
+---
 
-Bản hoàn thành phải:
-- Chạy được bằng hướng dẫn trong README.
-- Có cấu hình mẫu .env.example, không commit secrets.
-- Có health check và lưu trữ dữ liệu cần thiết.
-- Chạy được test trong quy trình CI.
-- Có thể triển khai API lên một máy chủ hoặc nền tảng cloud nếu có điều kiện.
+## Module 7: LLM Data Preparation & Model Evaluation
 
-Không bắt buộc deploy model lên cloud. Bạn có thể giữ Ollama chạy local trong giai đoạn đầu, miễn là tách lớp model provider để sau này thay đổi được.
+### 1. Nội dung học
 
-- Xây dựng API: https://fastapi.tiangolo.com/tutorial/
-- Kiểm thử API: https://fastapi.tiangolo.com/tutorial/testing/
-- Đánh giá AI: https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/
-- Đo tải: https://docs.locust.io/en/stable/
-- Giám sát OpenTelemetry: https://opentelemetry.io/docs/languages/python/
-- Prometheus: https://prometheus.io/docs/introduction/overview/
-- Grafana: https://grafana.com/docs/
-- Đóng gói Docker: https://docs.docker.com/guides/python/
-- Docker Compose: https://docs.docker.com/compose/
-- Pytest: https://docs.pytest.org/en/stable/getting-started.html
+**A. Xử lý và làm sạch dữ liệu văn bản (Data Cleaning & Quality Assurance)**
+- Xử lý dữ liệu khuyết thiếu (missing values), chuẩn hóa encoding, định dạng văn bản và lọc bỏ nội dung nhiễu.
+- Kỹ thuật lọc trùng lặp: Deduplication chính xác và Near-deduplication (sử dụng MinHash, LSH).
+- Quy trình gán nhãn dữ liệu (Data Annotation) theo schema định sẵn và xây dựng hướng dẫn gán nhãn (labeling guideline).
+- Kiểm tra chất lượng dữ liệu: phát hiện nhãn xung đột, mẫu gán nhãn sai, kiểm tra tính nhất quán và quy trình QA/QC trước training.
+- Chiến lược phân chia train/validation/test nghiêm ngặt: loại bỏ rò rỉ dữ liệu (data leakage) giữa các tập.
+
+**B. Chuẩn bị Dataset chuyên biệt cho Huấn luyện LLM**
+- Quản lý nguồn gốc dữ liệu (data provenance), bản quyền và tính riêng tư.
+- Chuẩn hóa cấu trúc dataset theo các kỹ thuật huấn luyện:
+  - **SFT (Supervised Fine-Tuning):** Định dạng `instruction – input – output` hoặc định dạng hội thoại `messages` (`role: system/user/assistant`, `content`).
+  - **DPO (Direct Preference Optimization):** Cấu trúc bộ ba `prompt – chosen – rejected` phục vụ căn chỉnh sở thích con người (alignment).
+- Kiểm tra tính hợp lệ của schema, trường bắt buộc, dữ liệu rỗng và độ dài ký tự.
+- Phân tích phân phối độ dài token (Token length distribution), xử lý các mẫu vượt ngưỡng context window của mô hình.
+- Quản lý phiên bản dữ liệu (data versioning) và metadata bằng Hugging Face Datasets để đảm bảo tính tái lập thực nghiệm.
+
+**C. Đánh giá mô hình & Xây dựng Benchmark**
+- Thiết kế prompt template chuẩn phục vụ quy trình đánh giá nhất quán.
+- Xây dựng bộ benchmark hoàn chỉnh: các ca kiểm thử điển hình, ca kiểm thử biên (edge cases) và đáp án tham chiếu.
+- Lựa chọn metric phù hợp:
+  - Bài toán phân loại / trích xuất: Accuracy, Precision, Recall, F1-score.
+  - Bài toán sinh tự do: BLEU, ROUGE, độ chính xác ngữ nghĩa (Semantic similarity), tỷ lệ tuân thủ format.
+  - Đánh giá bằng LLM-as-a-judge (sử dụng LLM mạnh hơn để chấm điểm theo rubric).
+- Đánh giá đối đầu (A/B testing) giữa các checkpoint trước và sau training/fine-tuning.
+- Quy trình Error Analysis: phân loại các nhóm lỗi chính của mô hình và đề xuất giải pháp cải thiện tập dữ liệu.
+
+### 2. Tài liệu học
+- **Hugging Face Datasets:** https://huggingface.co/docs/datasets/
+- **Hugging Face TRL — SFT Trainer:** https://huggingface.co/docs/trl/sft_trainer
+- **Hugging Face TRL — DPO Trainer:** https://huggingface.co/docs/trl/dpo_trainer
+- **Hugging Face Tokenizers:** https://huggingface.co/docs/tokenizers/
+- **Hugging Face Evaluate:** https://huggingface.co/docs/evaluate/
+
+### 3. Bài tập thực hành
+
+#### Bài 1 — Làm sạch và kiểm tra chất lượng Dataset
+- Chuẩn bị một bộ dữ liệu văn bản thô chứa dữ liệu thiếu, trùng lặp, lỗi encoding và nhãn mâu thuẫn.
+- Xây dựng script tiền xử lý tự động và xuất báo cáo thống kê số lượng mẫu trước và sau làm sạch.
+- Thiết lập quy trình QA/QC tự động phát hiện các mẫu không đạt tiêu chuẩn chất lượng.
+
+#### Bài 2 — Xây dựng Dataset chuẩn SFT
+- Chuyển đổi dữ liệu đã làm sạch sang định dạng chuẩn SFT (`instruction – input – output` hoặc hội thoại `messages`).
+- Viết script kiểm tra schema: loại bỏ các trường rỗng, kiểm tra tính hợp lệ của cú pháp JSON/Dictionary.
+- Sử dụng tokenizer đo phân phối độ dài token, lọc hoặc cắt tỉa các mẫu vượt ngưỡng context window.
+- Phân chia train/val/test và kiểm tra xác suất trùng lặp dữ liệu giữa các tập.
+
+#### Bài 3 — Xây dựng Dataset chuẩn DPO
+- Thiết kế bộ dữ liệu gồm các bộ ba `prompt – chosen – rejected`.
+- Kiểm tra tính hợp lệ: cùng một prompt, phản hồi `chosen` phải thể hiện câu trả lời tốt hơn rõ ràng so với `rejected` dựa trên tiêu chí định sẵn (chính xác, hữu ích, không độc hại).
+- Lưu và tải dataset bằng thư viện `datasets` của Hugging Face, kiểm tra tương thích với `DPOTrainer`.
+
+#### Bài 4 — Thiết kế Benchmark đánh giá mô hình
+- Xây dựng bộ test suite gồm 30–50 mẫu kiểm thử bao quát các tình huống thường gặp và câu hỏi bẫy.
+- Xây dựng barem điểm tham chiếu và script chấm điểm tự động.
+- Lưu lại toàn bộ output dự đoán và báo cáo đánh giá ra file CSV/JSON.
+
+#### Bài 5 — Đánh giá so sánh trước và sau huấn luyện (Pre vs Post Fine-Tuning)
+- Chạy đánh giá trên cùng một bộ benchmark cho mô hình nền (base model) và mô hình sau khi fine-tune.
+- So sánh các chỉ số định lượng, tốc độ suy luận và mức độ khắc phục các ca lỗi điển hình.
+- Viết báo cáo kỹ thuật tổng kết kết quả, các hạn chế còn tồn đọng và định hướng cải tiến chất lượng dữ liệu ở chu kỳ tiếp theo.
