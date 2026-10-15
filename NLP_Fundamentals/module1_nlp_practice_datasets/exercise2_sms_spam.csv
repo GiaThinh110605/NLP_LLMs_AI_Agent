@@ -1,0 +1,41 @@
+id,label,message
+S020,spam,Cash reward available now. Claim your gift.
+S017,spam,Win big with this free competition entry.
+S016,spam,Lowest price loan available. Apply today.
+H007,ham,I bought groceries on my way home.
+S005,spam,Free entry in our competition. Text WIN to claim.
+S013,spam,"Congratulations, your mobile number won a prize."
+H018,ham,I have finished reading the first chapter.
+H008,ham,Are you coming to the library tomorrow?
+H020,ham,We should discuss the group project tomorrow.
+S007,spam,Winner! Your reward is waiting. Click here.
+H006,ham,The meeting has moved to room number three.
+S010,spam,You have won a cash prize. Call now to claim.
+S014,spam,Get a free vacation by entering this contest.
+H012,ham,Let's review the Python exercise after class.
+H015,ham,I enjoyed our conversation yesterday.
+S009,spam,Exclusive deal: get a free voucher now.
+S018,spam,Your bonus is ready. Click to collect now.
+H005,ham,Thanks for helping me with the assignment.
+S001,spam,Congratulations! You won a free prize. Click the link now.
+H014,ham,Don't forget to bring your student card.
+S006,spam,Limited offer! Claim your bonus now.
+S012,spam,Claim your special offer before it expires.
+S002,spam,URGENT: claim your cash reward today.
+H010,ham,Happy birthday! Hope you have a great day.
+H002,ham,Please send me the notes from class.
+S003,spam,You have been selected for a free gift. Reply WIN.
+H011,ham,"The bus is late, so I may arrive ten minutes later."
+H017,ham,The weather looks good for a walk this afternoon.
+S004,spam,"Get cheap loans now, apply immediately."
+H016,ham,Can we reschedule our appointment for Friday?
+H004,ham,Can you call me when you finish work?
+H013,ham,Your package is at the front desk.
+S011,spam,Act now to receive your free ticket.
+H003,ham,I will be home around seven tonight.
+S019,spam,Free ringtone offer. Subscribe today.
+H001,ham,"Hi, are we still meeting for lunch today?"
+S008,spam,Earn extra cash from home. Sign up today.
+S015,spam,Urgent reward notice: reply YES to claim.
+H009,ham,I will send the project file this evening.
+H019,ham,Please let me know when you arrive.
