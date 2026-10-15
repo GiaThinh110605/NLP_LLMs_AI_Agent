@@ -10,13 +10,34 @@
 
 ## Module 1: NLP Fundamentals
 
-- Tổng quan về NLP, các bài toán phổ biến và vai trò của NLP trong AI hiện đại.
-- Lịch sử phát triển của NLP: từ các phương pháp truyền thống đến deep learning.
-- Các kỹ thuật xử lý văn bản cơ bản: tokenization, normalization, stopwords và biểu diễn dữ liệu text.
-- Thực hành xử lý một bộ dữ liệu văn bản đơn giản để hiểu pipeline NLP cơ bản.
+### Nội dung học
 
-- video: https://www.youtube.com/live/4O0HPXiDpTs?si=GOmMVvysstUO2zl1
-- bài tập: https://www.nltk.org/book_1ed/ và https://www.nltk.org/
+- Tổng quan về NLP, các bài toán phổ biến và vai trò của NLP trong AI hiện đại.
+- Lịch sử phát triển của NLP: từ các phương pháp truyền thống đến Machine Learning, Deep Learning và LLM.
+- Các kỹ thuật xử lý văn bản cơ bản: tokenization, normalization, stopwords, stemming và lemmatization.
+- Biểu diễn văn bản: Bag of Words, n-grams, TF-IDF và khái niệm word embeddings.
+- Các bài toán NLP phổ biến: text classification, sentiment analysis, named entity recognition (NER), information extraction và text similarity.
+- Xây dựng pipeline NLP cơ bản: thu thập dữ liệu, làm sạch văn bản, tiền xử lý, biểu diễn dữ liệu và đưa vào mô hình.
+- Chia tập dữ liệu train/validation/test; hiểu data leakage và tầm quan trọng của dữ liệu chất lượng.
+- Các chỉ số đánh giá cơ bản: accuracy, precision, recall và F1-score.
+- Thực hành xử lý và phân tích một bộ dữ liệu văn bản; xây dựng mô hình phân loại văn bản đơn giản bằng TF-IDF và Logistic Regression.
+
+### Tài liệu học
+
+- Video tổng quan: https://www.youtube.com/live/4O0HPXiDpTs?si=GOmMVvysstUO2zl1
+- NLTK Book: https://www.nltk.org/book_1ed/
+- NLTK Documentation: https://www.nltk.org/
+- Scikit-learn — Text Feature Extraction: https://scikit-learn.org/stable/modules/feature_extraction.html
+- Scikit-learn — Text Classification: https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
+
+### Bài tập thực hành
+
+1. Làm sạch và chuẩn hóa dữ liệu văn bản, xử lý dữ liệu rỗng và trùng lặp.
+2. Thực hành tokenization, loại bỏ stopwords, stemming và lemmatization.
+3. Biểu diễn văn bản bằng Bag of Words và TF-IDF; so sánh kết quả.
+4. Xây dựng mô hình phân loại cảm xúc hoặc phân loại văn bản bằng Logistic Regression.
+5. Chia dữ liệu thành train/validation/test, tránh data leakage và đánh giá bằng accuracy, precision, recall, F1-score.
+6. Phân tích các mẫu dự đoán sai và viết báo cáo ngắn về pipeline, kết quả và hạn chế của mô hình.
 
 ---
 
@@ -62,34 +83,96 @@
 
 ## Module 3: Transformer & LLMs
 
-- Hiểu kiến trúc Transformer và sự khác biệt so với RNN/LSTM.
-- Tổng quan về các LLM phổ biến và cách các mô hình này hoạt động.
-- Tìm hiểu cách prompting, context và token ảnh hưởng đến chất lượng đầu ra.
-- Phân biệt Fine-tuning và RAG để chọn hướng tiếp cận phù hợp.
+### 1. Nội dung học
 
-- https://www.youtube.com/live/VCq4YFYAj-Q?si=fQPAbUMXpS35tmMD
-- https://www.youtube.com/playlist?list=PLqL-7eLmqd9V3faivSAST76YQClS44dSz
+**A. Nền tảng Transformer và LLM**
+- Hiểu kiến trúc Transformer, Self-Attention, Positional Encoding và Embeddings.
+- Phân biệt Transformer với RNN/LSTM; phân biệt Encoder-only, Decoder-only và Encoder-Decoder.
+- Tìm hiểu cách LLM được huấn luyện và sinh văn bản; hiểu token, context window và giới hạn đầu vào.
+- Tổng quan về các LLM phổ biến và tiêu chí lựa chọn mô hình theo chất lượng, chi phí và tài nguyên.
 
-### tài liệu:
-- prompt engineering: https://developers.openai.com/api/docs/guides/prompt-engineering?api-mode=responses
+**B. Prompt Engineering**
+- Học các kỹ thuật zero-shot, few-shot, instruction prompting và prompt template.
+- Tìm hiểu ảnh hưởng của context, giới hạn token và cách viết prompt đến chất lượng đầu ra.
+- Thực hành kiểm soát định dạng đầu ra bằng JSON và xây dựng prompt có cấu trúc.
 
-| Tiêu chí | RAG | Fine-tuning |
-| :--- | :--- | :--- |
-| Mục đích | Bổ sung kiến thức từ tài liệu bên ngoài | Điều chỉnh hành vi hoặc năng lực theo dữ liệu huấn luyện |
-| Cập nhật dữ liệu | Thường chỉ cần cập nhật kho tài liệu | Thường cần huấn luyện lại hoặc tiếp tục fine-tune |
-| Chi phí ban đầu | Có thể thấp với mô hình embedding và LLM có sẵn | Tốn thêm tài nguyên huấn luyện |
-| Phù hợp khi | Hỏi đáp tài liệu, dữ liệu thường xuyên thay đổi, cần dẫn nguồn | Muốn chuẩn hóa phong cách, định dạng, cách phân loại hoặc hành vi chuyên biệt |
+**C. Đánh giá mô hình và Benchmark**
+- Xây dựng bộ câu hỏi kiểm thử cùng đáp án tham chiếu và tiêu chí đánh giá.
+- Đánh giá độ chính xác, mức độ liên quan, khả năng tuân thủ yêu cầu và tính nhất quán.
+- So sánh các prompt hoặc mô hình trên cùng bộ dữ liệu kiểm thử.
+- Ghi lại kết quả thực nghiệm, phân tích lỗi và đề xuất cải thiện.
 
-- https://huggingface.co/docs/peft/index
+**D. Phân biệt RAG và Fine-tuning**
+- Hiểu nguyên lý hoạt động, ưu điểm và hạn chế của RAG và Fine-tuning.
+- Biết khi nào nên dùng RAG, Fine-tuning hoặc kết hợp cả hai.
+- Hiểu cơ bản về PEFT/LoRA để fine-tune mô hình nhỏ với tài nguyên hạn chế.
+- Biết cách đánh giá và so sánh hai phương pháp theo cùng bài toán.
 
-Thực hành fine-tuning tiết kiệm tài nguyên, sau đó so sánh với một hệ thống RAG sử dụng cùng bài toán và bộ câu hỏi kiểm thử.
+### 2. Video học tập
 
-### Bài tập tổng hợp
-1. Tạo 10 câu hỏi và kiểm thử 3 cách prompting.
-2. Thay đổi lượng context và giới hạn token; ghi lại chất lượng đầu ra.
-3. Xây dựng RAG hỏi đáp trên tài liệu PDF, yêu cầu trích dẫn nguồn.
-4. Fine-tune mô hình nhỏ cho một tác vụ cụ thể.
-5. So sánh hai phương pháp về độ chính xác, chi phí, độ trễ và khả năng cập nhật dữ liệu.
+- Video 1: https://www.youtube.com/live/VCq4YFYAj-Q?si=fQPAbUMXpS35tmMD
+- Video 2: https://www.youtube.com/playlist?list=PLqL-7eLmqd9V3faivSAST76YQClS44dSz
+
+### 3. Tài liệu học
+
+**Transformer và LLM**
+- Paper gốc *Attention Is All You Need*: https://arxiv.org/abs/1706.03762
+- Hugging Face LLM Course: https://huggingface.co/learn/llm-course/
+- Hugging Face Transformers: https://huggingface.co/docs/transformers/
+
+**Prompt Engineering**
+- OpenAI Prompt Engineering: https://developers.openai.com/api/docs/guides/prompt-engineering
+
+**Fine-tuning tiết kiệm tài nguyên**
+- Hugging Face PEFT: https://huggingface.co/docs/peft/index
+- Hugging Face Transformers Trainer: https://huggingface.co/docs/transformers/main_classes/trainer
+
+**RAG và đánh giá**
+- Hugging Face RAG documentation: https://huggingface.co/docs/transformers/model_doc/rag
+- Ragas – đánh giá hệ thống RAG: https://docs.ragas.io/en/latest/
+- Hugging Face Evaluate: https://huggingface.co/docs/evaluate/
+
+### 4. Bài tập thực hành
+
+**Bài 1 – Thử nghiệm Prompt Engineering**
+- Chọn một tác vụ, chẳng hạn phân loại phản hồi khách hàng hoặc hỏi đáp.
+- Tạo 10 câu hỏi và thử nghiệm 3 cách prompting: zero-shot, few-shot và instruction prompting.
+- Ghi lại kết quả, xác định prompt nào tốt hơn và giải thích nguyên nhân.
+
+**Bài 2 – Thí nghiệm Context và Token**
+- Thử nghiệm với context ngắn, context dài và context có thông tin nhiễu.
+- Thay đổi độ dài đầu vào và giới hạn token đầu ra.
+- Ghi nhận chất lượng câu trả lời, số token sử dụng và thời gian phản hồi.
+
+**Bài 3 – Xây dựng Benchmark**
+- Tạo bộ kiểm thử khoảng 30–50 câu hỏi có đáp án tham chiếu.
+- Xây dựng tiêu chí đánh giá và lưu kết quả vào CSV/JSON.
+- So sánh các prompt hoặc mô hình trên cùng bộ câu hỏi để bảo đảm kết quả có thể đối chiếu.
+
+**Bài 4 – Xây dựng hệ thống RAG**
+- Sử dụng một tập tài liệu PDF làm nguồn tri thức.
+- Thực hiện pipeline: đọc tài liệu → chia chunk → tạo embeddings → truy xuất → sinh câu trả lời.
+- Yêu cầu câu trả lời trích dẫn tài liệu nguồn.
+- Đánh giá độ chính xác, khả năng truy xuất đúng đoạn và tính chính xác của trích dẫn.
+
+**Bài 5 – Fine-tuning mô hình nhỏ**
+- Chọn mô hình nhỏ phù hợp với tài nguyên máy và một tác vụ cụ thể.
+- Chuẩn bị dataset theo định dạng phù hợp, chia train/validation và fine-tune bằng LoRA/PEFT.
+- Đánh giá mô hình trước và sau fine-tuning trên cùng bộ kiểm thử.
+- Ghi lại cấu hình, thời gian huấn luyện, kết quả và hạn chế.
+
+**Bài 6 – So sánh RAG và Fine-tuning**
+- Sử dụng cùng bài toán và bộ câu hỏi kiểm thử để so sánh hai phương pháp.
+- So sánh độ chính xác, chi phí, độ trễ, khả năng cập nhật dữ liệu và mức độ phù hợp với yêu cầu.
+- Tổng hợp kết quả bằng bảng và viết báo cáo kỹ thuật, đưa ra kết luận nên chọn phương pháp nào trong từng tình huống.
+
+### 5. Sản phẩm đầu ra
+
+- Notebook thực hành Prompt Engineering và Transformer/LLM.
+- Bộ benchmark có câu hỏi, đáp án tham chiếu và kết quả đánh giá.
+- Một hệ thống RAG hỏi đáp tài liệu PDF có trích dẫn nguồn.
+- Một mô hình nhỏ đã fine-tune cùng kết quả đánh giá trước/sau huấn luyện.
+- Báo cáo so sánh RAG và Fine-tuning, kèm mã nguồn và hướng dẫn chạy.s
 
 ---
 
