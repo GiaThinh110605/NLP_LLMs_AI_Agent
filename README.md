@@ -29,6 +29,7 @@
 - **NLTK Documentation:** https://www.nltk.org/
 - **Scikit-learn — Text Feature Extraction:** https://scikit-learn.org/stable/modules/feature_extraction.html
 - **Scikit-learn — Text Classification:** https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
+- **100 bài tập NLP:** https://github.com/minhpqn/nlp_100_drill_exercises
 
 ### 3. Bài tập thực hành
 1. **Làm sạch và chuẩn hóa dữ liệu:** Xử lý dữ liệu rỗng, trùng lặp và chuẩn hóa ký tự văn bản.
