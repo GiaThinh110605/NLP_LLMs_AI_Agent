@@ -13,15 +13,11 @@
 ## Module 1: NLP Fundamentals
 
 ### 1. Nội dung học
-- Tổng quan về NLP, các bài toán phổ biến và vai trò của NLP trong AI hiện đại.
-- Lịch sử phát triển của NLP: từ các phương pháp truyền thống đến Machine Learning, Deep Learning và LLM.
-- Các kỹ thuật xử lý văn bản cơ bản: tokenization, normalization, stopwords, stemming và lemmatization.
-- Biểu diễn văn bản: Bag of Words, n-grams, TF-IDF và khái niệm word embeddings.
-- Các bài toán NLP phổ biến: text classification, sentiment analysis, named entity recognition (NER), information extraction và text similarity.
-- Xây dựng pipeline NLP cơ bản: thu thập dữ liệu, làm sạch văn bản, tiền xử lý, biểu diễn dữ liệu và đưa vào mô hình.
-- Chia tập dữ liệu train/validation/test; hiểu data leakage và tầm quan trọng của dữ liệu chất lượng.
-- Các chỉ số đánh giá cơ bản: accuracy, precision, recall và F1-score.
-- Thực hành xử lý và phân tích một bộ dữ liệu văn bản; xây dựng mô hình phân loại văn bản đơn giản bằng TF-IDF và Logistic Regression.
+Tổng quan về NLP, các bài toán phổ biến và vai trò của NLP trong AI hiện đại.
+Lịch sử phát triển của NLP: từ các phương pháp truyền thống đến deep learning.
+Các kỹ thuật xử lý văn bản cơ bản: tokenization, normalization, stopwords và biểu diễn dữ liệu text.
+Thực hành xử lý một bộ dữ liệu văn bản đơn giản để hiểu pipeline NLP cơ bản.
+
 
 ### 2. Tài liệu học
 - **Video bài giảng:** https://www.youtube.com/live/4O0HPXiDpTs?si=GOmMVvysstUO2zl1
@@ -44,11 +40,11 @@
 ## Module 2: Deep Learning in NLP
 
 ### 1. Nội dung học
-- Neural Network trong NLP và cách deep learning cải thiện khả năng biểu diễn ngôn ngữ.
-- Kiến trúc tuần tự: nguyên lý hoạt động, ưu và nhược điểm của RNN, LSTM và GRU.
-- Xử lý vấn đề vanishing/exploding gradient trong mạng tuần tự.
-- Ứng dụng mô hình tuần tự vào bài toán phân loại văn bản (sequence classification).
-- Thực hành xây dựng, huấn luyện và đánh giá mô hình NLP cơ bản bằng PyTorch.
+Neural Network trong NLP và cách deep learning cải thiện khả năng xử lý ngôn ngữ.
+Tìm hiểu các kiến trúc RNN, LSTM, GRU: nguyên lý hoạt động, ưu và nhược điểm.
+Ứng dụng các mô hình tuần tự vào bài toán xử lý văn bản.
+Thực hành xây dựng và huấn luyện mô hình NLP cơ bản bằng PyTorch.
+
 
 ### 2. Video & Tài liệu học
 - **Video bài giảng:**
@@ -89,12 +85,11 @@
 ### 1. Nội dung học
 
 **A. Nền tảng Transformer và LLM**
-- Kiến trúc Transformer: Self-Attention, Multi-Head Attention, Positional Encoding, Feed-Forward layers và Residual Connections.
-- So sánh sự khác biệt bản chất giữa Transformer và kiến trúc tuần tự (RNN/LSTM).
-- Phân loại các nhánh kiến trúc: Encoder-only (BERT), Decoder-only (GPT, LLaMA), Encoder-Decoder (T5).
-- Cơ chế huấn luyện trước (Pre-training), căn chỉnh (Alignment) và sinh văn bản (Autoregressive generation).
-- Khái niệm token, context window, attention mask và giới hạn độ dài đầu vào.
-- Tiêu chí lựa chọn mô hình: chất lượng, chi phí API, tài nguyên GPU và độ trễ.
+- Hiểu kiến trúc Transformer và sự khác biệt so với RNN/LSTM.
+- Tổng quan về các LLM phổ biến và cách các mô hình này hoạt động.
+- Tìm hiểu cách prompting, context và token ảnh hưởng đến chất lượng đầu ra.
+- Phân biệt Fine-tuning và RAG để chọn hướng tiếp cận phù hợp.
+
 
 **B. Prompt Engineering**
 - Các kỹ thuật prompting cơ bản và nâng cao: Zero-shot, Few-shot, Instruction Prompting, Chain-of-Thought (CoT).
@@ -170,14 +165,11 @@
 ## Module 4: RAG (Retrieval-Augmented Generation)
 
 ### 1. Nội dung học
-- Tổng quan kiến trúc RAG: Workflow chuẩn từ câu hỏi người dùng đến câu trả lời hoàn chỉnh.
-- Các thành phần cốt lõi:
-  - **Document Loaders & Preprocessing:** Đọc PDF, Word, Markdown, làm sạch dữ liệu.
-  - **Chunking Strategies:** Fixed-size chunking, sentence splitting, semantic chunking; vai trò của chunk size và overlap.
-  - **Embeddings:** Vector representation của văn bản, sự khác biệt giữa sparse embedding (BM25) và dense embedding.
-  - **Vector Database:** Lưu trữ, lập chỉ mục (HNSW, IVFFlat) và tìm kiếm độ tương đồng (Cosine, Dot product, Euclidean).
-  - **Retrieval & Reranking:** Top-k retrieval, lọc metadata, kết hợp Hybrid Search (BM25 + Dense).
-  - **Generation:** Xây dựng system prompt, nhồi context, ràng buộc chống ảo giác (hallucination).
+Hiểu khái niệm RAG và workflow cơ bản của một hệ thống truy xuất kết hợp sinh câu trả lời.
+Tìm hiểu các thành phần chính: chunking, embeddings, vector store, retrieval và generation.
+Cách chuẩn bị tài liệu và tối ưu dữ liệu đầu vào cho hệ thống RAG.
+Thực hành xây dựng một RAG chatbot cơ bản có thể trả lời theo tài liệu.
+
 
 ### 2. Video & Tài liệu học
 - **Video bài giảng:**
@@ -254,20 +246,19 @@
 ## Module 5: AI Agents
 
 ### 1. Nội dung học
-- Định nghĩa AI Agent và sự khác biệt giữa Chatbot thông thường, RAG Chatbot và AI Agent:
-  - Chatbot: Chỉ giao tiếp phản hồi.
-  - RAG: Tìm kiếm thông tin và tổng hợp.
-  - AI Agent: Tự lập kế hoạch (Reasoning/Planning), gọi công cụ (Tool calling/Action), lưu nhớ ngữ cảnh (Memory) và lặp lại để đạt mục tiêu.
-- Các kiến trúc Agent phổ biến: ReAct (Reasoning + Acting), Plan-and-Solve, Tool Use.
-- Quản lý bộ nhớ (Memory): Short-term memory (trong hội thoại) và Long-term memory (lưu trữ vector/cơ sở dữ liệu).
-- Xử lý lỗi khi gọi công cụ, kiểm soát an toàn (guardrails) và tránh lặp vô hạn (infinite loop).
+Hiểu AI Agent là gì và cách agent khác với chatbot hoặc RAG chatbot.
+Tìm hiểu các thành phần cốt lõi của agent: model, memory, tools và workflow.
+Cách cho agent sử dụng công cụ để xử lý các tác vụ nhiều bước.
+Thực hành xây dựng một AI Agent đơn giản cho bài toán thực tế.
+
 
 ### 2. Tài liệu học
 - **Hugging Face Agents Course:** https://huggingface.co/learn/agents-course/en/unit1/introduction
 - **Ollama Tool Calling Documentation:** https://docs.ollama.com/capabilities/tool-calling
 - **LangGraph Persistence:** https://langchain-ai.github.io/langgraph/how-tos/persistence/
 - **Dataset thực hành phân tích:** UCI Online Retail Dataset
-
+- langraph: https://www.youtube.com/watch?v=jGg_1h0qzaM&t=9071s
+- 
 ### 3. Bài tập thực hành
 
 #### Bài 1 — Tạo Tool Calling cơ bản cho Agent
@@ -310,11 +301,11 @@
 ## Module 6: AI Deployment in Production
 
 ### 1. Bối cảnh & Mục tiêu thực tế
-- Chuyển giao ứng dụng AI từ bản thử nghiệm (prototype) sang dịch vụ production sẵn sàng phục vụ người dùng thực tế:
-  - Cung cấp API chuẩn cho các client (Web, Mobile).
-  - Khả năng chịu lỗi cao: Xử lý ngoại lệ khi LLM service gián đoạn, database mất kết nối hoặc tài liệu lỗi.
-  - Đảm bảo chất lượng câu trả lời và trích dẫn.
-  - Giám sát hiệu năng hệ thống, phát hiện điểm nghẽn và đo tải thực tế.
+Tổng quan về cách đưa chatbot hoặc AI Agent từ bản demo sang ứng dụng thực tế.
+Xây dựng server và client cơ bản để kết nối mô hình và xử lý request.
+Chạy thử, đánh giá các kịch bản sử dụng và theo dõi hiệu năng hệ thống.
+Tìm hiểu các lưu ý quan trọng khi triển khai AI trong môi trường production.
+
 
 ### 2. Yêu cầu kỹ thuật chi tiết
 
